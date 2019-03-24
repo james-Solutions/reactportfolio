@@ -1,7 +1,7 @@
-## React Portfolio Website
+# React Portfolio Website
 This is a create react app that has been made into a portfolio for programmers and web designers in general. It contains a basic landing page, about page, work page and contact page. A blog portion will be added soon with an admin control panel. 
 
-# To begin using
+## To begin using
 First get the node modules with 
 ```
 npm install
