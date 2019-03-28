@@ -7,11 +7,11 @@ export default class AppNavBar extends Component {
     isHome: PropTypes.string,
     isAbout: PropTypes.string,
     isWork: PropTypes.string,
-    isContact: PropTypes.string,
-    isBlog: PropTypes.string
+    isContact: PropTypes.string
+    // isBlog: PropTypes.string
   };
   render() {
-    const { isHome, isAbout, isWork, isContact, isBlog } = this.props;
+    const { isHome, isAbout, isWork, isContact } = this.props;
     return (
       <Navbar brand="My Portfolio" right className="light-blue">
         <NavItem className={isHome} href="/">
@@ -26,9 +26,9 @@ export default class AppNavBar extends Component {
         <NavItem className={isContact} href="/contact">
           Contact
         </NavItem>
-        <NavItem className={isBlog} href="/blog">
+        {/* <NavItem className={isBlog} href="/blog">
           Blog
-        </NavItem>
+        </NavItem> */}
       </Navbar>
     );
   }

@@ -7,17 +7,21 @@ import {
   Collapsible,
   CollapsibleItem,
   Icon,
-  Button
+  Button,
+  Badge
 } from 'react-materialize';
+import Collection from 'react-materialize/lib/Collection';
+import CollectionItem from 'react-materialize/lib/CollectionItem';
 
 export default class Blog extends Component {
   render() {
+    document.title = 'Portfolio - Blog';
     return (
       <div id="blog-container">
         <AppNavBar isBlog="active" />
         <div className="container">
           <div className="row">
-            <Col s={12} m={8}>
+            <Col m={8} s={12}>
               <Card
                 header={
                   <CardTitle image="./project-images/asteroid-plot.png" />
@@ -81,11 +85,15 @@ export default class Blog extends Component {
                 </CollapsibleItem>
               </Collapsible>
             </Col>
-            <Col s={12} m={4}>
-              <i>Latest Posts:</i>
-              <p>Asteroid Data</p>
-              <p>First Post</p>
-            </Col>
+            <div className="s4 hide-on-small-only">
+              <p>Latest posts:</p>
+              <Collection>
+                <CollectionItem>
+                  Asteroid Data <Badge newIcon>2</Badge>
+                </CollectionItem>
+                <CollectionItem>First Blog Post</CollectionItem>
+              </Collection>
+            </div>
           </div>
         </div>
       </div>

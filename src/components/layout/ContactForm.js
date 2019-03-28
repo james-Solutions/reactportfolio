@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Field, reduxForm } from 'redux-form';
 import { Card, Col } from 'react-materialize';
-import { reset } from 'redux-form';
+import Captcha from './Captcha';
 
 class ContactForm extends Component {
   static propTypes = {
     handleSubmit: PropTypes.func.isRequired
   };
+
   render() {
     const { handleSubmit } = this.props;
     return (
@@ -66,6 +67,11 @@ class ContactForm extends Component {
                     <label htmlFor="message">Your Message</label>
                   </div>
                 </div>
+                <div className="row">
+                  <fieldset>
+                    <Field name="captcharesponse" component={Captcha} />
+                  </fieldset>
+                </div>
                 <button
                   className="btn waves-effect waves-light light-blue"
                   type="submit"
@@ -83,9 +89,6 @@ class ContactForm extends Component {
   }
 }
 
-const afterSubmit = (result, dispatch) => dispatch(reset('contactInput'));
-
 export default reduxForm({
-  form: 'contactInput',
-  onSubmitSuccess: afterSubmit
+  form: 'contactInput'
 })(ContactForm);

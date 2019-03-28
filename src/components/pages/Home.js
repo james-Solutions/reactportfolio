@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Col, Card } from 'react-materialize';
 import AppNavBar from '../layout/AppNavBar';
 
 const styles = {
@@ -26,6 +25,7 @@ const styles = {
 
 class Home extends Component {
   render() {
+    document.title = 'Portfolio - Home';
     return (
       <div style={styles.header}>
         <AppNavBar isHome="active" />

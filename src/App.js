@@ -9,10 +9,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Work from './components/pages/Work';
 import Contact from './components/pages/Contact';
-import Blog from './components/pages/Blog';
 import NotFound from './components/pages/NotFound';
-
-import EditWork from './components/admin/EditWork';
 
 import './index.css';
 
@@ -26,13 +23,7 @@ class App extends Component {
               <Route exact path="/" render={() => <Home />} />
               <Route exact path="/about" render={() => <About />} />
               <Route exact path="/contact" render={() => <Contact />} />
-              <Route exact path="/blog" render={() => <Blog />} />
-              <Route
-                exact
-                path="/work"
-                render={() => <Work isAdmin={false} />}
-              />
-              <Route exact path="/admin/work" render={() => <EditWork />} />
+              <Route exact path="/work" render={() => <Work />} />
               <Route component={NotFound} />
             </Switch>
             <Footer />
