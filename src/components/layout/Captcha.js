@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Recaptcha from 'react-recaptcha';
+import React, { Component } from "react";
+import Recaptcha from "react-recaptcha";
 
 class Captcha extends Component {
-  onChange = response => {};
-  verifyCallback = response => {
+  onChange = (response) => {};
+  verifyCallback = (response) => {
     if (response) {
       this.setState({
-        isVerified: true
+        isVerified: true,
       });
     }
   };

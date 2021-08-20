@@ -27,13 +27,6 @@ const rootReducer = combineReducers({
   // Add custom reducers here
 });
 
-//For everybody to be able to view the projects data and write to contact requests
-// firebase
-//   .auth()
-//   .signInAnonymously()
-//   .then(() => {})
-//   .catch((error) => {});
-
 // Create initial state
 const initialState = {};
 

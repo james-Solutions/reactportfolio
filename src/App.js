@@ -22,10 +22,14 @@ class App extends Component {
           <Router>
             <div>
               <Switch>
-                <Route exact path="/" render={() => <Home />} />
-                <Route exact path="/about" render={() => <About />} />
-                <Route exact path="/contact" render={() => <Contact />} />
-                <Route exact path="/work" render={() => <Work />} />
+                <Route exact={true} path="/" render={() => <Home />} />
+                <Route exact={true} path="/about" render={() => <About />} />
+                <Route
+                  exact={true}
+                  path="/contact"
+                  render={() => <Contact />}
+                />
+                <Route exact={true} path="/work" render={() => <Work />} />
                 <Route component={NotFound} />
               </Switch>
               <Footer />

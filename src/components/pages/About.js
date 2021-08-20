@@ -58,7 +58,8 @@ const About = () => {
                   My skills are focused in the Web Development and Mobile
                   Development areas. I enjoy working in React and React Native,
                   along with using Cloud Database Services like Google's
-                  Firestore/Firebase.
+                  Firestore/Firebase. I enjoy producing quality Websites and
+                  Applications that focus on the users experience.
                 </p>
               </Card>
             </Col>
@@ -70,16 +71,7 @@ const About = () => {
                 <h6>Graduate Research Assistant</h6>
                 <p style={{ fontStyle: "italic" }}>Aug 2021 - current</p>
                 <hr />
-                <p>
-                  I traveled the U.S. and Canada for ABC Financial to train new
-                  and existing clients for the ABC provided software called
-                  ’DataTrak.’ Each clients needs in training were coordinated
-                  based upon client's business model. Travel arrangements were
-                  coordinated based upon the clients schedule to meet
-                  appropriate deadlines. Managed expense reports of said
-                  arrangements. Along with detailing daily update reports to
-                  account executives and others.
-                </p>
+                <p>I perform research work on graduate projects.</p>
               </Card>
             </Col>
             <Col m={6} s={12}>
@@ -89,14 +81,12 @@ const About = () => {
                 <p style={{ fontStyle: "italic" }}>Aug 2020 - Aug 2021</p>
                 <hr />
                 <p>
-                  I traveled the U.S. and Canada for ABC Financial to train new
-                  and existing clients for the ABC provided software called
-                  ’DataTrak.’ Each clients needs in training were coordinated
-                  based upon client's business model. Travel arrangements were
-                  coordinated based upon the clients schedule to meet
-                  appropriate deadlines. Managed expense reports of said
-                  arrangements. Along with detailing daily update reports to
-                  account executives and others.
+                  I was brought onboard to work on a React Project that was
+                  using machine learning with x-ray imagery. Being the most
+                  experienced with React on the team, I implemented numerous
+                  React Design patterns. Namely, the Redux architecture using
+                  Redux Toolkit. As well, I worked on the server communication
+                  in Node.js using Socket.IO and REST API's.
                 </p>
               </Card>
             </Col>

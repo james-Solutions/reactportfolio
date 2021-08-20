@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Field, reduxForm } from 'redux-form';
-import { Card, Col } from 'react-materialize';
-import Captcha from './Captcha';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { Field, reduxForm } from "redux-form";
+import { Card, Col } from "react-materialize";
+import Captcha from "./Captcha";
 
 class ContactForm extends Component {
   static propTypes = {
-    handleSubmit: PropTypes.func.isRequired
+    handleSubmit: PropTypes.func.isRequired,
   };
 
   render() {
@@ -76,7 +76,7 @@ class ContactForm extends Component {
                   className="btn waves-effect waves-light light-blue"
                   type="submit"
                   name="action"
-                  style={{ width: '100%' }}
+                  style={{ width: "100%" }}
                 >
                   Submit
                 </button>
@@ -90,5 +90,5 @@ class ContactForm extends Component {
 }
 
 export default reduxForm({
-  form: 'contactInput'
+  form: "contactInput",
 })(ContactForm);
