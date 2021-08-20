@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import { ReactReduxFirebaseProvider } from "react-redux-firebase";
@@ -19,22 +19,23 @@ class App extends Component {
     return (
       <Provider store={store}>
         <ReactReduxFirebaseProvider {...rrfProps}>
-          <Router>
-            <div>
-              <Switch>
-                <Route exact={true} path="/" render={() => <Home />} />
-                <Route exact={true} path="/about" render={() => <About />} />
-                <Route
-                  exact={true}
-                  path="/contact"
-                  render={() => <Contact />}
-                />
-                <Route exact={true} path="/work" render={() => <Work />} />
-                <Route component={NotFound} />
-              </Switch>
-              <Footer />
-            </div>
-          </Router>
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/contact">
+                <Contact />
+              </Route>
+              <Route exact path="/work">
+                <Work />
+              </Route>
+              <Route exact path="/">
+                <Home />
+              </Route>
+            </Switch>
+            <Footer />
+          </BrowserRouter>
         </ReactReduxFirebaseProvider>
       </Provider>
     );

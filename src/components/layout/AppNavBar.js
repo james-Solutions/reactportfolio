@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { Navbar, NavItem } from 'react-materialize';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import { Navbar, NavItem } from "react-materialize";
+import PropTypes from "prop-types";
 
 export default class AppNavBar extends Component {
   static propTypes = {
     isHome: PropTypes.string,
     isAbout: PropTypes.string,
     isWork: PropTypes.string,
-    isContact: PropTypes.string
+    isContact: PropTypes.string,
     // isBlog: PropTypes.string
   };
   render() {
     const { isHome, isAbout, isWork, isContact } = this.props;
     return (
-      <Navbar brand="My Portfolio" right className="light-blue">
+      <Navbar options={{ edge: "right" }} className="light-blue">
         <NavItem className={isHome} href="/">
           Home
         </NavItem>
